@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.buttons{
+    border: none;
+    height: 50px;
+    font-size: 20px;
+    background-color: rgb(180, 211, 6);
+    cursor: pointer; 
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+    #button1{
+        position: fixed;
+        left: 0%;
+        top: 0%;
+        width: 10%;
+    }
+    .buttons:hover{
+        font-size: 23px;
+        background-color: rgb(255, 157, 0)
+    }
+    #button2{
+        position: fixed;
+        left: 10%;
+        top: 0%;
+        width: 15%;
+    }
+    #button3{
+        position: fixed;
+        left: 25%;
+        top: 0%;
+        width: 20%;
+    }
+    #button4{
+        position: fixed;
+        left: 45%;
+        top: 0%;
+        width: 25%;
+    }
+    #button5{
+        position: fixed;
+        left: 70%;
+        top: 0%;
+        width: 15%;
+    }
+    #button6{
+        position: fixed;
+        left: 85%;
+        top: 0%;
+        width: 15%;
+        background-color: rgb(180, 211, 6);
+    }
+
+.buy{
+    text-align: center;
+    font-family: arial;
+    background-color: coral;
+    border-radius: 1cm;
+    border: 0cm;
+    float: left;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3;
+    grid-gap: 1px;
+    width: 400px;
+    height: 300px;}
+
+
+
+

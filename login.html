@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="https://www.nicepng.com/png/full/65-655630_clover-icon-png.png">
+        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="log.css">
+        <title>Green Life</title>
+    </head>
+    <body> 
+        <div class="topnav">
+            <a class="active" href="index.html">Home</a>
+            <a href="login.html">Log In</a>
+            <a href="order.html">Listing</a>
+            <a href="addlist.html">Create List</a>
+        </div>
+    </body>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="log.css">
+    </head>
+    <body>
+        <div>
+            <div class="form-box">
+
+                <!-- TOGGLE BUTTONS -->
+                <div class="button_box">
+                    <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                    <button type="button" class="toggle-btn" onclick="register()">Register</button>
+                </div>
+
+
+            <!-- LOGIN FORM -->
+            <form id = "login" class="input-group">
+                <input type="text" class="input-field" placeholder="User ID" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"> <span>Remember Password</span>
+                <button type="submit" class="submit-btn">Log in</button>
+            </form>
+
+
+            <!-- REGISTER FORM -->
+            <form id = "register" class="input-group">
+                <input type="text" class="input-field" placeholder="User ID" required>
+                <input type="email" class="input-field" placeholder="Email ID" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="password" class="input-field" placeholder="Confirm Password" required>
+                <input type="checkbox" class="check-box"> <span>I agree to the terms &conditions</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+            </div>
+        </div>
+    
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+
+        function login(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0";
+        }
+    </script>
+    
+
+</body>
+</html>

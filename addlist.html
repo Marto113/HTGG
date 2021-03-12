@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create Listing</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="https://www.nicepng.com/png/full/65-655630_clover-icon-png.png">
+        <link rel="stylesheet" href="style1.css">
+        <link rel="stylesheet" href="style2.css">
+    </head>
+    <body> 
+        <div class="topnav">
+            <a class="active" href="index.html">Home</a>
+            <a href="login.html">Log In</a>
+            <a href="order.html">Listing</a>
+            <a href="addlist.html">Create List</a>
+        </div>
+    </body>
+        
+    
+    <script>
+        function show(){
+            document.getElementById('demo').style.display='inline-block';
+        }
+    </script>
+    
+    <div class="pos">
+        <h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp New Listing</h2>
+        <form action="/action_page.php" >
+            <label for="fname">Name<br></label>
+            <input type="text" id="fname" name="fname" placeholder="Enter name of the product"><br><br>
+
+            <div class="container" >
+                <label for="type">Type<br></label>
+                <select id="type1" onchange="show()">
+                  <option value="clear"></option>
+                  <option value="glass">Glass</option>
+                  <option value="metal">Metal</option>
+                  <option value="plastic">Plastic</option>
+                  <option value="wood">Wood</option>
+                </select>
+                </div><br>
+            <div>
+                <label for="phone">Phone number<br></label>
+                <input type="tel" id="phone" name="phone" pattern="((\+359)|0)[\d]{9}" maxlength="13" placeholder="Enter your phone number"><br><br>
+            </div>
+            <div>
+                <label for="address">Address<br></label>
+                <input type="text" id="address" name="address" placeholder="Enter your address"><br><br>
+            </div>
+            <div>
+                <label for="desc">Description<br></label>
+                <textarea rows = "7" cols = "118" id="textarea" name = "description" placeholder="Enter a description of your item"></textarea><br>
+            </div>
+                <br>
+                <dir>
+                    <button class="btnsubmit">Submit</button>
+                </dir>
+          </form>
+    </div>
+    </body> 
+</html>

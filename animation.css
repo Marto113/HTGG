@@ -1,0 +1,84 @@
+
+
+#add{
+position:absolute;
+left: 96%;
+top: 10%;
+margin: 0 12px;
+box-shadow: 0 0 20px 0 #7f7f7f3d;
+cursor: pointer;
+border-radius: 100%;
+width: 30px;
+}
+
+
+#background{
+position:relative;
+left: 0px;
+top: 0%;
+width:100%;
+height: 100vh;
+background-size: cover;
+background-position: center;
+z-index: -2;
+overflow: hidden;
+}
+
+.leafes img{
+width: 50px;
+animation: leaf 7s linear infinite;
+}
+.leafes{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-around;
+position: absolute;
+top: -9%;
+}
+
+@keyframes  leaf{
+0%{
+    transform: translateY(0);
+    opacity: 1;
+}
+50%{
+    opacity: 1;
+}
+70%{
+    opacity: 1;
+}
+100%{
+    transform: translateY(80vh);
+    opacity: 0;
+}
+}
+
+.leafes img:nth-child(1){
+animation-delay: 2s;
+width: 45px;
+}
+
+.leafes img:nth-child(2){
+animation-delay: 1s;
+
+}
+
+.leafes img:nth-child(3){
+animation-delay: 3s;
+width: 30px;
+}
+
+.leafes img:nth-child(4){
+animation-delay: 4.5s;
+
+}
+
+.leafes img:nth-child(5){
+animation-delay: 3s;
+width: 55px;
+}
+
+.leafes img:nth-child(6){
+animation-delay: 6s;
+}

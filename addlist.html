@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Create Listing</title>
+        <title>RecycleGG</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="https://www.nicepng.com/png/full/65-655630_clover-icon-png.png">
-        <link rel="stylesheet" href="style1.css">
-        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="addlist.css">
+        <link rel="stylesheet" href="navbar.css">
     </head>
     <body> 
+        <img id = "background"; src="Images/backgr_1.jpg">
         <div class="topnav">
             <a class="active" href="index.html">Home</a>
             <a href="login.html">Log In</a>
@@ -34,11 +35,11 @@
             <div class="container" >
                 <label for="type">Type<br></label>
                 <select id="type1" onchange="show()">
-                  <option value="clear"></option>
+                  <option value="clear">None</option>
+                  <option value="paper">Paper</option>
                   <option value="glass">Glass</option>
                   <option value="metal">Metal</option>
                   <option value="plastic">Plastic</option>
-                  <option value="wood">Wood</option>
                 </select>
                 </div><br>
             <div>

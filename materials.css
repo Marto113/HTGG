@@ -5,13 +5,21 @@ img {vertical-align: middle;}
 body{
     margin: 0;
     background-color: gray;
+    background-image: url('Images/background3.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 
 #parent{position: absolute;height: 500;}
 
+p{
+  font-size: 13;
+}
+
 .browser{
     position: relative;
-    bottom: 500;
+    bottom: 515;
     left: 400;
     background: rgb(227, 233, 219);
     margin: 4px;
@@ -23,8 +31,8 @@ body{
 .browser1{
     position: relative;
     bottom: 10;
-    left: 2;
-    background: lightslategray;
+    left: 0;
+    background: #4CAF50;
     margin: 4px;
     font-size: 90%;
     height: 300;

@@ -10,6 +10,7 @@
     margin: 6% auto;
     background: #fff;
     padding: 5px;
+    border-radius: 1cm;
 }
 body{
     background-color:grey;
@@ -114,4 +115,63 @@ span{
     cursor: pointer; 
     font-weight: bold;
     transition-duration: 0.5s;
+}
+
+.leafes img{
+    width: 50px;
+    animation: leaf 7s linear infinite;
+}
+.leafes{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: -9%;
+}
+
+@keyframes  leaf{
+    0%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(80vh);
+        opacity: 0;
+    }
+}
+
+.leafes img:nth-child(1){
+    animation-delay: 2s;
+    width: 45px;
+}
+
+.leafes img:nth-child(2){
+    animation-delay: 1s;
+    
+}
+
+.leafes img:nth-child(3){
+    animation-delay: 3s;
+    width: 30px;
+}
+
+.leafes img:nth-child(4){
+    animation-delay: 4.5s;
+    
+}
+
+.leafes img:nth-child(5){
+    animation-delay: 3s;
+    width: 55px;
+}
+
+.leafes img:nth-child(6){
+    animation-delay: 6s;
 }

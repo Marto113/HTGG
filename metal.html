@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="https://www.nicepng.com/png/full/65-655630_clover-icon-png.png">
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="materials.css">
+        
+        <title>Green Life</title>
+    </head>
+    <body> 
+        <div class="topnav">
+            <a class="active" href="index.html">Home</a>
+            <a href="login.html">Log In</a>
+            <a href="order.html">Listing</a>
+            <a href="addlist.html">Create List</a>
+        </div>
+        <br><br><br><br>
+        <div id="parent">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="Images/banner.jpg" height="500" width="250">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="Images/banner.jpg" height="500" width="250">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="Images/banner.jpg" height="500" width="250">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+        </div>
+
+            <article class="browser">
+                <h1>&nbspEcoMetal</h1>
+                <h1>&nbspSampleaddres st.7</h1>
+                <h1>&nbspPhone: 0888378943</h1>
+                <h1>&nbspDescription:</h1>
+                <article class="browser1">
+                <p><br><br>&nbsp;This company is orientated in recylcing plastic goods. If u have any plastic bottles that
+                you would like to recycle, feel free to <br>&nbsp;give us a chance.</p>
+                <br>
+                <p>&nbsp;Why should you give us a chance?</p>
+                <p>&nbsp;Everything we collect we recylce into new materials and provide for the people in need.</p>
+                <p>&nbsp;Our return rate is much higher than the ones in competitors of ours with a 0.50 cents per bottle.</p>
+            </article>
+            </article>
+        </div>
+
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+    </body>
+</html>
